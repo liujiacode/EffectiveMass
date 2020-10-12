@@ -1,0 +1,225 @@
+ 
+     ===============================================================
+     Materials Studio DMol^3 version 8.0
+     compiled on Dec  4 2014 21:28:21
+     ===============================================================
+ 
+     ===============================================================
+     Density Functional Theory Electronic Structure Program
+     Copyright (c) 2014, Accelrys Inc. All rights reserved.
+     Cite work using this program as: 
+     B. Delley, J. Chem. Phys. 92,  508  (1990).
+     B. Delley, J. Chem. Phys. 113, 7756 (2000).
+     DMol^3 is available as part of Materials Studio.
+     ===============================================================
+ 
+ 
+DATE:     Oct 11 16:01:26 2020
+ 
+Job started on host WIN
+
+This run uses    2 processors
+
+Message: License checkout of MS_dmol successful
+Message: License checkout of MS_dsolid successful
+ 
+Basis set is read from file:
+DMol3\BASFILE_v3.5
+
+ 
+ parallel run with   2 processors
+ 
+ no INCOOR file: try ZMAT
+ no ZMAT file: try CAR
+
+Geometry is read from file: HC.car                                                                                                                                                                                                                                                          
+
+INCOOR, atomic coordinates in au (for archive):
+______________________________________________________________________>8
+
+$cell vectors
+              4.80047127532122    0.00000000000000    0.00000000000000
+             -2.40023563766061    4.15733007456565    0.00000000000000
+              0.00000000000000    0.00000000000000   34.01507024988462
+$coordinates
+H             2.40023563766061    1.38577669074482   14.47409269273090
+C             2.40023563766061    1.38577669074482   16.57384297925628
+H             0.00000000000000    2.77155338337937   19.54097755715371
+C             0.00000000000000    2.77155338337937   17.44122727062834
+$end
+______________________________________________________________________>8
+
+
+N_atoms =    4     N_atom_types =  2
+
+
+INPUT_DMOL keywords (for archive):
+______________________________________________________________________>8
+
+#Warning: no global confinement specs in BASFILE
+                                                                                                                                    <--
+# Task parameters                                                                                                                   <--
+Calculate                     energy                                                                                                <--
+Symmetry                      on                                                                                                    <--
+Max_memory                    2048                                                                                                  <--
+File_usage                    smart                                                                                                 <--
+Scf_density_convergence       1.000000e-006                                                                                         <--
+Scf_charge_mixing             2.000000e-001                                                                                         <--
+Scf_diis                      6 pulay                                                                                               <--
+Scf_iterations                50                                                                                                    <--
+                                                                                                                                    <--
+# Electronic parameters                                                                                                             <--
+Spin_polarization             restricted                                                                                            <--
+Charge                        0                                                                                                     <--
+Basis                         dnp                                                                                                   <--
+Pseudopotential               none                                                                                                  <--
+Functional                    pbe                                                                                                   <--
+Aux_density                   octupole                                                                                              <--
+Dftd                          G06                                                                                                   <--
+Integration_grid              fine                                                                                                  <--
+Occupation                    fermi                                                                                                 <--
+Cutoff_Global                 3.7000 angstrom                                                                                       <--
+                                                                                                                                    <--
+# Kpoint definition file (intervals/offset):                                                                                        <--
+Kpoints                       file     9 9 1 0.0000 0.0000 0.0000                                                                   <--
+HC.kpoints                                                                                                                          
+                                                                                                                                    <--
+# Calculated properties                                                                                                             <--
+______________________________________________________________________>8
+
+
+Publications of specific relevance to this calculation:
+
+Density functional:
+ PBE functional: Perdew Burke Ernzerhof: Phys. Rev. Lett. 77, 3865 (1996)
+
+ 
+ +---------------------------------------------------+
+ |                                                   |
+ |  Using DFT-SEDC - the DFT Semi-Empirical          |
+ |  Dispersion interaction Correction module         |
+ |  Copyright (c) 2008 Erik McNellis and Joerg Meyer |
+ |  Fritz-Haber-Institut der MPG. Distributed under  |
+ |  the GNU Lesser General Public License (LGPL).    |
+ |                                                   |
+ | Please cite the following publication in all      |
+ | work arising from your use of DMol3 SEDC:         |
+ |                                                   |
+ | Erik R. McNellis, Joerg Meyer, and Karsten Reuter |
+ | Phys. Rev. B 80, 205414 (2009)                    |
+ |                                                   |
+ +---------------------------------------------------+
+ 
+
+Fast Calculation of Electrostatics in Crystals and Large Molecules;
+ Delley: J. Phys. Chem. 100, 6107 (1996)
+
+Parallel eigenvalue solution:
+Parallel solution of partial symmetric eigenvalue problems from electronic structure calculations:
+Auckenthaler, Blum, Bungartz, et al.: Parallel Computing 37, 783 (2011)
+
+ 
+Calculation is Spin_restricted
+ 
+ 
+
+The point group of the crystal is:
+ hexagonal of order 12
+ with inversion symmetry
+
+Note: C3 point group operation found: mesh 3
+
+
+Lattice:
+ translation vector [a0]    1    4.800471275    0.000000000    0.000000000
+ translation vector [a0]    2   -2.400235638    4.157330075    0.000000000
+ translation vector [a0]    3    0.000000000    0.000000000   34.015070250
+Cell volume          678.844 a0^3
+Hydrogen     nbas=  1, z=   1, nrfn=  3, rcut=  6.99, e_ref= -0.042900 Ha
+                                  rcore=  0.00  zval=   1.00   1.00
+   n=1  L=0  occ= 1.00 e=      -0.231205Ha        -6.2914eV
+   n=1  L=0  occ= 0.00 e=      -0.844913Ha       -22.9913eV
+   n=2  L=1  occ= 0.00 e=      -1.999991Ha       -54.4226eV
+Carbon       nbas=  2, z=   6, nrfn=  7, rcut=  6.99, e_ref= -0.050925 Ha
+                                  rcore=  0.00  zval=   6.00   6.00
+   n=1  L=0  occ= 2.00 e=     -10.022241Ha      -272.7192eV
+   n=2  L=0  occ= 2.00 e=      -0.492054Ha       -13.3895eV
+   n=2  L=1  occ= 2.00 e=      -0.179668Ha        -4.8890eV
+   n=2  L=0  occ= 0.00 e=      -1.483161Ha       -40.3589eV
+   n=2  L=1  occ= 0.00 e=      -1.167317Ha       -31.7643eV
+   n=3  L=2  occ= 0.00 e=      -2.722210Ha       -74.0751eV
+   n=3  L=2  occ= 0.00 e=      -1.387900Ha       -37.7667eV  eliminated
+
+Kpoints mesh:   9   9   1    0  0  0    0  1      81
+
+Parameters for generating k-points:   9   9   1        0.00      0.00      0.00       81
+Total number of symmetry-unique k points:      12
+Total number of symmetry-unique tetrahedra:      43
+
+
+Symmetry orbitals C1                            
+    n  norb    representation
+    1    38        a    
+  total number of valence orbitals:     38
+
+ cell charge=              0.000000   active electron number      14.0
+ (without charge=              14.0 )
+ 
+
+ real array elements, matrices vectors etc:       3.4 MB 
+ integer arrays                           :       0.2 MB 
+ min recommended for all-incl workspace   :       7.3 MB 
+Total memory allocated for arrays         :      36.2 MB 
+Memory for temporary file storage on disk :       3.9 MB
+Total memory allocated                    :      40.0 MB
+Max memory requested                      :    2048.0 MB
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -77.404799Ha        -0.8203838Ha      1.29E-01     0.0m      1
+Ef          -77.373380Ha        -0.7889640Ha      9.80E-02     0.1m      2
+Ef          -77.354425Ha        -0.7700095Ha      3.75E-02     0.1m      3
+Ef          -77.353058Ha        -0.7686425Ha      2.07E-02     0.1m      4
+Ef          -77.351340Ha        -0.7669243Ha      5.76E-03     0.1m      5
+Ef          -77.351316Ha        -0.7669000Ha      1.72E-03     0.1m      6
+Ef          -77.351323Ha        -0.7669073Ha      2.59E-04     0.1m      7
+Ef          -77.351321Ha        -0.7669052Ha      2.27E-05     0.1m      8
+Ef          -77.351321Ha        -0.7669052Ha      1.37E-05     0.1m      9
+Ef          -77.351320Ha        -0.7669048Ha      2.82E-06     0.2m     10
+Ef          -77.351320Ha        -0.7669048Ha      1.21E-06     0.2m     11
+Ef          -77.351320Ha        -0.7669048Ha      8.43E-07     0.2m     12
+Message: SCF converged
+
+
+Fermi Energy:           -0.105553 Ha     -2.872 eV 
+
+the following statement is to be taken with caution (kmesh=  9  9  1 ):
+ within the k-points mesh accuracy this solid is an insulator or semiconductor
+DFT energy gap:          0.168804 Ha      4.593 eV   direct
+valence band edge:      -0.189955 Ha     -5.169 eV
+       located at:         0.000  0.000  0.000  in fractional units of recip
+conduction band edge:   -0.021151 Ha     -0.576 eV
+          located at:      0.000  0.000  0.000
+
+Energy components:
+   Sum of atomic energies =      -76.5844156Ha
+                  Kinetic =       -0.7332184Ha
+            Electrostatic =       -0.5206250Ha
+     Exchange-correlation =        0.2992891Ha
+        Spin polarization =        0.1876495Ha
+         DFT-D correction =       -0.0107203Ha
+      =====================
+       Total DFT-D energy =      -77.3620406Ha
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -77.362041Ha        -0.7776251Ha      6.18E-07     0.2m     13
+
+df  binding energy      -0.7776251Ha         -21.16026eV        -487.977kcal/mol
+
+ +++ Entering Properties Section +++ 
+
+Message: License checkin of MS_dmol successful
+Message: License checkin of MS_dsolid successful
+
+Message: DMol3 job finished successfully
+
+ time all done       0.20m       12.25s

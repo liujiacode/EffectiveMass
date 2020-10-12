@@ -3,7 +3,7 @@ A script used to calculate effective masses of holes and electrons automatically
 Note that "Band structure" calculation and analyzation should be performed before running this script.
 
 ## Version
-EffectiveMass v2.0.1.
+EffectiveMass v2.0.2.
 
 ## Python Version
 Python 3.6 or later.
@@ -147,5 +147,6 @@ EffectiveMass is free software, which is distributed in the hope that it will be
 #### EffectiveMass
 * **v2.0.0:** The calculations of hole and electron effective masses are confused in v1.x.x, and they have been corrected in v2.0.0.
 
-* **v2.0.1:** Sometimes x index in band structure end up with 0.99999... instead of 1.0, 
-which would lead to error "Unknown length of x axis" in v2.0.0 or older.
+* **v2.0.1:** Sometimes x index in band structure end up with 0.99999... instead of 1.0, which would lead to error "Unknown length of x axis" in v2.0.0 or older.
+
+* **v2.0.2:** Add an example. Add band index outputs. Fix negative gap bug.

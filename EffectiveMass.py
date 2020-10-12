@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*-coding:utf-8-*-
 
-__version__ = "v2.0.1"
+__version__ = "v2.0.2"
 __author__ = "Jia Liu"
 
 __str__ = """
@@ -224,11 +224,12 @@ class EffectiveMass(object):
             output_file = output_file + '(%s)' % str(file_index)
         self._output_file = output_file + ".out"
         with open(self._output_file, 'w') as o_file:
-            o_file.write("Electron and hole effective mass calculated by %s.\n" % sys.path[0])
+            o_file.write("Electron and hole effective mass calculated by %s with argv %s.\n" % (sys.path[0] + os.sep + sys.argv[0], sys.argv[1:]))
             o_file.write("EffectiveMass.py version: %s.\n" % __version__)
-            o_file.write("Project path: %s.\n" % self._project)
+            o_file.write("Project path: %s.\n" % os.path.abspath(self._project))
             o_file.write("Calculation code: %s\n" % self._code)
             o_file.write("Calculation method: %s\n" % self._method)
+            o_file.write("\nPlease check the calculation results carefully!\n")
 
     def output(self, string):
         with open(self._output_file, 'a') as o_file:
@@ -313,6 +314,8 @@ class EffectiveMass(object):
         conduction_band = tuple()
         x_axis = []
         next_conduction_band = False
+        vb_index = 0
+        cb_index = 0
         for each_point in point_2d:
             x, y = [float(i) for i in each_point.xpath("@xy")[0].split(',')]
             x_axis.append(x)
@@ -342,11 +345,18 @@ class EffectiveMass(object):
                 raise ValueError("Invalid dis_x of last discarded point: %s." % str(i_dis_x))
 
             if next_conduction_band:
+                cb_index = band_index
                 conduction_band = tuple(y_axis)
-                break
-            if max(y_axis) == 0:
+                next_conduction_band = False
+            if abs(max(y_axis)) < 0.0001:
+                vb_index = band_index
                 valence_band = tuple(y_axis)
                 next_conduction_band = True
+
+        self.output('')
+        self.output("++++++++++++ Loading ++++++++++++")
+        self.output('Find valence band at index: %s' % vb_index)
+        self.output('Find conduction band at index: %s' % cb_index)
 
         x_axis = tuple(x_axis)
         if not valence_band:
@@ -576,7 +586,7 @@ class EffectiveMass(object):
         self.output('')
         self.output('(1) Holes on valence band.')
         self.output('Max value on valence band: %s %s' % (hole_value, band_gap_unit))
-        self.output("Hole position: %s" % hole_position)
+        self.output("VBM position: %s" % hole_position)
         dir_content = ""
         for hole_dir in hole_directions:
             dir_content += "  %s(%s) -> %s(%s)\n" % (hole_dir[0][0], hole_dir[0][1], hole_dir[1][0], hole_dir[1][1])
@@ -660,7 +670,7 @@ class EffectiveMass(object):
         self.output('')
         self.output('(2) Electrons on conduction band.')
         self.output('Min value on conduction band: %s %s' % (elec_value, band_gap_unit))
-        self.output("Mass position: %s" % elec_position)
+        self.output("CBM position: %s" % elec_position)
         dir_content = ""
         for elec_dir in elec_directions:
             dir_content += "  %s(%s) -> %s(%s)\n" % (elec_dir[0][0], elec_dir[0][1], elec_dir[1][0], elec_dir[1][1])

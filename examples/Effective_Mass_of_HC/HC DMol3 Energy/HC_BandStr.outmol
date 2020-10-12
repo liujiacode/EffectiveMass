@@ -1,0 +1,284 @@
+ 
+     ===============================================================
+     Materials Studio DMol^3 version 8.0
+     compiled on Dec  4 2014 21:28:21
+     ===============================================================
+ 
+     ===============================================================
+     Density Functional Theory Electronic Structure Program
+     Copyright (c) 2014, Accelrys Inc. All rights reserved.
+     Cite work using this program as: 
+     B. Delley, J. Chem. Phys. 92,  508  (1990).
+     B. Delley, J. Chem. Phys. 113, 7756 (2000).
+     DMol^3 is available as part of Materials Studio.
+     ===============================================================
+ 
+ 
+DATE:     Oct 11 16:01:38 2020
+ 
+Job started on host WIN
+
+This run uses    2 processors
+
+Message: License checkout of MS_dmol successful
+Message: License checkout of MS_dsolid successful
+ 
+Basis set is read from file:
+DMol3\BASFILE_v3.5
+
+ 
+ parallel run with   2 processors
+ 
+ no INCOOR file: try ZMAT
+ no ZMAT file: try CAR
+
+Geometry is read from file: HC_BandStr.car                                                                                                                                                                                                                                                  
+
+INCOOR, atomic coordinates in au (for archive):
+______________________________________________________________________>8
+
+$cell vectors
+              4.80047127532122    0.00000000000000    0.00000000000000
+             -2.40023563766061    4.15733007456565    0.00000000000000
+              0.00000000000000    0.00000000000000   34.01507024988462
+$coordinates
+H             2.40023563766061    1.38577669074482   14.47409269273090
+C             2.40023563766061    1.38577669074482   16.57384297925628
+H             0.00000000000000    2.77155338337937   19.54097755715371
+C             0.00000000000000    2.77155338337937   17.44122727062834
+$end
+______________________________________________________________________>8
+
+
+N_atoms =    4     N_atom_types =  2
+
+
+INPUT_DMOL keywords (for archive):
+______________________________________________________________________>8
+
+#Warning: no global confinement specs in BASFILE
+Calculate                     energy                                                                                                <--
+Scf_iterations                0                                                                                                     <--
+use_old_density_and_keep      on                                                                                                    <--
+Max_memory                    2048                                                                                                  <--
+File_usage                    smart                                                                                                 <--
+empty_bands                   12                                                                                                    <--
+                                                                                                                                    <--
+Symmetry                      on                                                                                                    <--
+                                                                                                                                    <--
+# Electronic parameters                                                                                                             <--
+Spin_polarization             restricted                                                                                            <--
+Charge                        0                                                                                                     <--
+Basis                         dnp                                                                                                   <--
+Pseudopotential               none                                                                                                  <--
+Functional                    pbe                                                                                                   <--
+Aux_density                   octupole                                                                                              <--
+Dftd                          G06                                                                                                   <--
+Integration_grid              fine                                                                                                  <--
+Occupation                    fermi                                                                                                 <--
+Cutoff_Global                 3.7000 angstrom                                                                                       <--
+                                                                                                                                    <--
+# Kpoint definition file:                                                                                                           <--
+Kpoints                       file                                                                                                  <--
+ No kpoint grid information is available
+ No symmetry will be applied to the kpoints given in file
+HC_BandStr.kpoints                                                                                                                  
+                                                                                                                                    <--
+plot_dos                      on                                                                                                    <--
+______________________________________________________________________>8
+
+
+Publications of specific relevance to this calculation:
+
+Density functional:
+ PBE functional: Perdew Burke Ernzerhof: Phys. Rev. Lett. 77, 3865 (1996)
+
+ 
+ +---------------------------------------------------+
+ |                                                   |
+ |  Using DFT-SEDC - the DFT Semi-Empirical          |
+ |  Dispersion interaction Correction module         |
+ |  Copyright (c) 2008 Erik McNellis and Joerg Meyer |
+ |  Fritz-Haber-Institut der MPG. Distributed under  |
+ |  the GNU Lesser General Public License (LGPL).    |
+ |                                                   |
+ | Please cite the following publication in all      |
+ | work arising from your use of DMol3 SEDC:         |
+ |                                                   |
+ | Erik R. McNellis, Joerg Meyer, and Karsten Reuter |
+ | Phys. Rev. B 80, 205414 (2009)                    |
+ |                                                   |
+ +---------------------------------------------------+
+ 
+
+Fast Calculation of Electrostatics in Crystals and Large Molecules;
+ Delley: J. Phys. Chem. 100, 6107 (1996)
+
+Parallel eigenvalue solution:
+Parallel solution of partial symmetric eigenvalue problems from electronic structure calculations:
+Auckenthaler, Blum, Bungartz, et al.: Parallel Computing 37, 783 (2011)
+
+Restart of SCF calculations requested
+
+ 
+Calculation is Spin_restricted
+ 
+ 
+
+The point group of the crystal is:
+ hexagonal of order 12
+ with inversion symmetry
+
+Note: C3 point group operation found: mesh 3
+
+
+Lattice:
+ translation vector [a0]    1    4.800471275    0.000000000    0.000000000
+ translation vector [a0]    2   -2.400235638    4.157330075    0.000000000
+ translation vector [a0]    3    0.000000000    0.000000000   34.015070250
+Cell volume          678.844 a0^3
+Hydrogen     nbas=  1, z=   1, nrfn=  3, rcut=  6.99, e_ref= -0.042900 Ha
+                                  rcore=  0.00  zval=   1.00   1.00
+   n=1  L=0  occ= 1.00 e=      -0.231205Ha        -6.2914eV
+   n=1  L=0  occ= 0.00 e=      -0.844913Ha       -22.9913eV
+   n=2  L=1  occ= 0.00 e=      -1.999991Ha       -54.4226eV
+Carbon       nbas=  2, z=   6, nrfn=  7, rcut=  6.99, e_ref= -0.050925 Ha
+                                  rcore=  0.00  zval=   6.00   6.00
+   n=1  L=0  occ= 2.00 e=     -10.022241Ha      -272.7192eV
+   n=2  L=0  occ= 2.00 e=      -0.492054Ha       -13.3895eV
+   n=2  L=1  occ= 2.00 e=      -0.179668Ha        -4.8890eV
+   n=2  L=0  occ= 0.00 e=      -1.483161Ha       -40.3589eV
+   n=2  L=1  occ= 0.00 e=      -1.167317Ha       -31.7643eV
+   n=3  L=2  occ= 0.00 e=      -2.722210Ha       -74.0751eV
+   n=3  L=2  occ= 0.00 e=      -1.387900Ha       -37.7667eV  eliminated
+
+Kpoints and weights given in KPOINTS file:
+________________________________________________________________________>8
+
+Parameters for generating k-points:   0   0   0        0.00      0.00      0.00        0
+$reciprocal sampling points and weights                                         
+0.0000000000 0.0000000000 0.0000000000 0.0476190476                             
+0.0000000000 0.0333333333 0.0000000000 0.0238095238                             
+0.0000000000 0.0666666667 0.0000000000 0.0238095238                             
+0.0000000000 0.1000000000 0.0000000000 0.0238095238                             
+0.0000000000 0.1333333333 0.0000000000 0.0238095238                             
+0.0000000000 0.1666666667 0.0000000000 0.0238095238                             
+0.0000000000 0.2000000000 0.0000000000 0.0238095238                             
+0.0000000000 0.2333333333 0.0000000000 0.0238095238                             
+0.0000000000 0.2666666667 0.0000000000 0.0238095238                             
+0.0000000000 0.3000000000 0.0000000000 0.0238095238                             
+0.0000000000 0.3333333333 0.0000000000 0.0238095238                             
+0.0000000000 0.3666666667 0.0000000000 0.0238095238                             
+0.0000000000 0.4000000000 0.0000000000 0.0238095238                             
+0.0000000000 0.4333333333 0.0000000000 0.0238095238                             
+0.0000000000 0.4666666667 0.0000000000 0.0238095238                             
+0.0000000000 0.5000000000 0.0000000000 0.0238095238                             
+-0.0370370370 0.5185185185 0.0000000000 0.0238095238                            
+-0.0740740741 0.5370370370 0.0000000000 0.0238095238                            
+-0.1111111111 0.5555555556 0.0000000000 0.0238095238                            
+-0.1481481481 0.5740740741 0.0000000000 0.0238095238                            
+-0.1851851852 0.5925925926 0.0000000000 0.0238095238                            
+-0.2222222222 0.6111111111 0.0000000000 0.0238095238                            
+-0.2592592593 0.6296296296 0.0000000000 0.0238095238                            
+-0.2962962963 0.6481481481 0.0000000000 0.0238095238                            
+-0.3333333333 0.6666666667 0.0000000000 0.0238095238                            
+-0.3137254902 0.6274509804 0.0000000000 0.0238095238                            
+-0.2941176471 0.5882352941 0.0000000000 0.0238095238                            
+-0.2745098039 0.5490196078 0.0000000000 0.0238095238                            
+-0.2549019608 0.5098039216 0.0000000000 0.0238095238                            
+-0.2352941176 0.4705882353 0.0000000000 0.0238095238                            
+-0.2156862745 0.4313725490 0.0000000000 0.0238095238                            
+-0.1960784314 0.3921568627 0.0000000000 0.0238095238                            
+-0.1764705882 0.3529411765 0.0000000000 0.0238095238                            
+-0.1568627451 0.3137254902 0.0000000000 0.0238095238                            
+-0.1372549020 0.2745098039 0.0000000000 0.0238095238                            
+-0.1176470588 0.2352941176 0.0000000000 0.0238095238                            
+-0.0980392157 0.1960784314 0.0000000000 0.0238095238                            
+-0.0784313725 0.1568627451 0.0000000000 0.0238095238                            
+-0.0588235294 0.1176470588 0.0000000000 0.0238095238                            
+-0.0392156863 0.0784313725 0.0000000000 0.0238095238                            
+-0.0196078431 0.0392156863 0.0000000000 0.0238095238                            
+$end
+
+Warning: no tetrahedra given
+________________________________________________________________________>8
+Total number of symmetry-unique k points:      41
+Total number of symmetry-unique tetrahedra:       0
+
+
+Symmetry orbitals C1                            
+    n  norb    representation
+    1    38        a    
+  total number of valence orbitals:     38
+
+ cell charge=              0.000000   active electron number      14.0
+ (without charge=              14.0 )
+ 
+
+ real array elements, matrices vectors etc:       3.5 MB 
+ integer arrays                           :       0.2 MB 
+ min recommended for all-incl workspace   :       7.4 MB 
+Total memory allocated for arrays         :      36.3 MB 
+Memory for temporary file storage on disk :       4.3 MB
+Total memory allocated                    :      40.5 MB
+Max memory requested                      :    2048.0 MB
+Message: SCF converged
+
+
+Fermi Energy:           -0.105553 Ha     -2.872 eV 
+DFT energy gap:          0.168804 Ha      4.593 eV
+valence band edge:      -0.189955 Ha     -5.169 eV
+conduction band edge:   -0.021151 Ha     -0.576 eV
+
+Energy components:
+   Sum of atomic energies =      -76.5844156Ha
+                  Kinetic =       -0.6850211Ha
+            Electrostatic =       -0.5206250Ha
+     Exchange-correlation =        0.2992891Ha
+        Spin polarization =        0.1876495Ha
+         DFT-D correction =       -0.0107203Ha
+      =====================
+       Total DFT-D energy =      -77.3138433Ha
+
+            Total Energy           Binding E       Cnvgnce     Time   Iter
+Ef          -77.313843Ha        -0.7294278Ha      2.70E-02     0.0m      1
+
+df  binding energy      -0.7294278Ha         -19.84875eV        -457.732kcal/mol
+
+ +++ Entering Properties Section +++ 
+
+
+
+Mulliken populations summed for each angular momentum shell:
+
+     1 H    charge=     0.040
+           s     0.935
+           p     0.025
+     2 C    charge=    -0.040
+           s     3.231
+           p     2.739
+           d     0.071
+     3 H    charge=     0.040
+           s     0.935
+           p     0.025
+     4 C    charge=    -0.040
+           s     3.231
+           p     2.739
+           d     0.071
+
+ Mulliken atomic charges:
+          charge    spin 
+ H (  1)   0.040   0.000
+ C (  2)  -0.040   0.000
+ H (  3)   0.040   0.000
+ C (  4)  -0.040   0.000
+
+Fermi energy:   -0.105553   -0.105553   -0.105553
+Message: License checkin of MS_dmol successful
+Message: License checkin of MS_dsolid successful
+
+Message: DMol3 job finished successfully
+
+ time all done       0.03m        1.76s
+
+DMol3.pl message: DMol3 job finished in 0 hr 0 min 15 sec.

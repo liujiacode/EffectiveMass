@@ -1,0 +1,31 @@
+Materials Studio SDF calculation
+TCVAMP81A 
+
+  4  0  0  0  0  0              1 V2000
+   -1.2702    0.7333    7.6594 H   0  0
+   -1.2702    0.7333    8.7705 C   0  0
+    1.2702   -0.7333   -7.6594 H   0  0
+    1.2702   -0.7333   -8.7705 C   0  0
+M  END
+
+> <DENSITY OF STATES FERMI>
+ACCELRYS, TYPE=DOUBLE, VERSION=1                                                
+     0.00000000
+
+> <BAND GAP>
+ACCELRYS, TYPE=DOUBLE, VERSION=1                                                
+     0.16880398
+
+> <TOTAL ENERGY>
+ACCELRYS, TYPE=DOUBLE, VERSION=1                                                
+   -77.36204060
+
+> <BINDING ENERGY>
+ACCELRYS, TYPE=DOUBLE, VERSION=1                                                
+    -0.77762505
+
+> <OPERATION STATUS>
+ACCELRYS, TYPE=STATUS, VERSION=1                                                
+SUCCESS
+
+$$$$
