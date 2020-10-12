@@ -1,6 +1,6 @@
-Electron and hole effective mass calculated by D:\VASP\HC\HC_Files\Documents\EffectiveMass.py with argv ['-p', 'HC DMol3 Energy'].
+Electron and hole effective mass calculated by EffectiveMass.py with argv ['-p', 'HC DMol3 Energy'].
 EffectiveMass.py version: v2.0.2.
-Project path: D:\VASP\HC\HC_Files\Documents\HC DMol3 Energy.
+Project path: HC DMol3 Energy.
 Calculation code: DMol3
 Calculation method: Energy
 
