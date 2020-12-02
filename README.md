@@ -152,3 +152,7 @@ Please cite "[Liu, J.; et al., Appl. Surf. Sci. 2020, 507, 144940.](https://doi.
 * **v2.0.1:** Sometimes x index in band structure end up with 0.99999... instead of 1.0, which would lead to error "Unknown length of x axis" in v2.0.0 or older.
 
 * **v2.0.2:** Add an example. Add band index outputs. Fix negative gap bug.
+
+## Known Bugs
+#### EffectiveMass
+* This script is written for Materials Studio 8.0. If you are using Materials Studio 2017 or higher, it may stop with an error "list index out of range". Please see <a href="https://github.com/liujiacode/EffectiveMass/issues/4">issue 4</a> for more information.
