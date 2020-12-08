@@ -143,8 +143,6 @@ https://github.com/liujiacode/EffectiveMass
 ## License
 EffectiveMass is free software, which is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY. You can redistribute it and/or modify it under the terms of the **GNU General Public License** as published by the Free Software Foundation. See the **GNU General Public License** for more details.
 
-Please cite "[Liu, J.; et al., Appl. Surf. Sci. 2020, 507, 144940.](https://doi.org/10.1016/j.apsusc.2019.144940)" if this script helps.
-
 ## Updates
 #### EffectiveMass
 * **v2.0.0:** The calculations of hole and electron effective masses are confused in v1.x.x, and they have been corrected in v2.0.0.
