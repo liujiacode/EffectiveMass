@@ -151,6 +151,12 @@ EffectiveMass is free software, which is distributed in the hope that it will be
 
 * **v2.0.2:** Add an example. Add band index outputs. Fix negative gap bug.
 
-## Known Bugs
+## Known Bugs and Issues
 #### EffectiveMass
-* This script is written for Materials Studio 8.0. If you are using Materials Studio 2017 or higher, it may stop with an error "list index out of range". Please see <a href="https://github.com/liujiacode/EffectiveMass/issues/4">issue 4</a> for more information.
+* **"list index out of range"**: This script is written for Materials Studio 8.0. If you are using Materials Studio 2017 or higher, it may stop with an error "list index out of range". Please see <a href="https://github.com/liujiacode/EffectiveMass/issues/4">issue 4</a> for more information.
+
+* **"unsupported operand type(s) for /: 'Vector' and 'float'"**: Please use Python 3.6 or later. Python 2 is not supported. Please see <a href="https://github.com/liujiacode/EffectiveMass/issues/5">issue 5</a> for more information.
+
+* **"Too many space groups record in model file"**: Please check your xsd file. You can open it with Notebook or other applications. Usually it contains only one "SpaceGroup" tag, just like `<SpaceGroup ID="7" Parent="2" Children="12" Name="P-3M1"` in EffectiveMass/examples/Effective_Mass_of_HC/HC.xsd at line 70. This script doesn't known which space group information is correct if your xsd file contains two or more space group tags. Please see <a href="https://github.com/liujiacode/EffectiveMass/issues/4">issue 4</a> for more information.
+
+* **"K lines and K path labels are mismatching"**: This script will verify the K point sequence automatically during calculation. In 2D materials, the K paths are usually consecutive with the end point of former equal to the start point of later, like "G-M, M-K, K-G". However, the sequence may be not consecutive in 3D materials, such as "G-M, Z-A". The disconnection of K paths may lead to this error. Please see <a href="https://github.com/liujiacode/EffectiveMass/issues/4">issue 4</a> for more information.
